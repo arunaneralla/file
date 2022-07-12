@@ -1,0 +1,7 @@
+---
+# handlers file for db
+- name: start DB
+  service:
+    name: "{{ db_server }}"
+    state: sarted
+

@@ -1,0 +1,13 @@
+---
+# tasks file for db
+- name: install DB
+  yum:
+    name: "{{ db_server }}"
+    state: installed
+  notify:
+    - start DB
+- name: display db
+  debug:
+    msg: "{{ db_server }}"
+
+
