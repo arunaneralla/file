@@ -1,8 +1,0 @@
----
-# handlers file for web
-- name: Start Web
-  service:
-    name: httpd
-    state: started
-
-
